@@ -1,6 +1,6 @@
 function sorting(arrNumber) {
     // code di sini
-    arrNumber.sort()
+    arrNumber.sort();
     return arrNumber;
 }
 
