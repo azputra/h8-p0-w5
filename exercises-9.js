@@ -1,6 +1,7 @@
 function cariPelaku(str) {
     // you can only write your code here!
-    
+    const newStr = str.match(/abc/g);
+    return newStr.length
   }
   
   // TEST CASES

@@ -1,8 +1,15 @@
 function totalDigitRekursif(angka) {
     // you can only write your code here!
-    const strAngka = angka.toString();
+    const strAngka = String(angka);
     if (strAngka.length === 1) {
       return Number(strAngka)
+    } else {
+      var sisa = "";
+      for (let i = 1; i < strAngka.length; i++) {
+        sisa += strAngka[i]
+        // console.log(sisa)
+      }
+      return Number(strAngka[0]) + totalDigitRekursif(Number(sisa))
     }
   }
   

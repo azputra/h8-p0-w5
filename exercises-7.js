@@ -14,7 +14,7 @@ function meleeRangedGrouping(str) {
     if (checkWord === true) {
       temp += str[i]
     }
-    if (str[i] === "," || str[i] === "-") {
+    if (str[i] === "," || str[i] === "-" || i === str.length-1) {
       arr.push(temp);
       multiArr.push(arr);
       temp = "";
@@ -22,7 +22,7 @@ function meleeRangedGrouping(str) {
     }
   }
   arr.push(temp);
-  multiArr.push(arr)
+  multiArr.push(arr);
   // console.log(multiArr)
   const ranged = [];
   const mele = [];
